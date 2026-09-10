@@ -1,0 +1,429 @@
+{
+  "runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "not required"
+  },
+  "random_seed": 1729,
+  "scope": "Finite-model sanity checks, not continuum proof or certified numerics.",
+  "graph": {
+    "description": "Eight-interior-vertex weighted graph; no continuum approximation claimed.",
+    "parameters": {
+      "s": 0.65,
+      "c": 0.7,
+      "interior_points": [
+        0.08,
+        0.2,
+        0.32,
+        0.44000000000000006,
+        0.56,
+        0.68,
+        0.8,
+        0.92
+      ],
+      "exterior_points": [
+        -1.4,
+        -0.6,
+        1.5,
+        2.2
+      ],
+      "exterior_weights": [
+        0.02,
+        0.03,
+        0.025,
+        0.02
+      ],
+      "selected_exterior_columns": [
+        1,
+        2
+      ],
+      "resolvent_alpha": 1.0,
+      "semigroup_time": 0.8
+    },
+    "neumann_gap": 1.291561045141596,
+    "local_neumann_gap": 0.24087192904599228,
+    "schur_identity_error": 6.938893903907228e-18,
+    "minimized_energy_identity_error": 0.0,
+    "constant_nullvector_error": 1.1957467920563633e-15,
+    "rows": [
+      {
+        "tau": 1.0,
+        "eta": 0.06927310316875385,
+        "lambda1": 0.04604433106260549,
+        "first_order_a": 0.04608508426459594,
+        "quadratic_correction_magnitude": 4.022800931611165e-05,
+        "first_order_error": 4.0753201990449683e-05,
+        "first_order_error_bound": 0.0001110626375813197,
+        "relative_form_defect": 0.04675877144007656,
+        "form_ground_error_bound": 0.003964784246566961,
+        "second_order_remainder": -5.251926743380313e-07,
+        "second_order_remainder_bound": 5.956864044719783e-06,
+        "remainder_divided_by_tau_cubed": -5.251926743380313e-07,
+        "resolvent_error": 0.044178841924152626,
+        "resolvent_error_bound": 0.0647852292959258,
+        "semigroup_error": 0.03645397210371729,
+        "semigroup_error_bound": 0.05541848253500308,
+        "max_eigenvalue_shift": 0.04604433106260571,
+        "split_schur_error": 8.881784197001252e-16
+      },
+      {
+        "tau": 0.5,
+        "eta": 0.03463655158437692,
+        "lambda1": 0.023032419897007304,
+        "first_order_a": 0.02304254213229797,
+        "quadratic_correction_magnitude": 1.0057002329027913e-05,
+        "first_order_error": 1.012223529066672e-05,
+        "first_order_error_bound": 2.7000532533016293e-05,
+        "relative_form_defect": 0.02337938572003828,
+        "form_ground_error_bound": 0.0009731910605656305,
+        "second_order_remainder": -6.52329616388071e-08,
+        "second_order_remainder_bound": 7.240891488663148e-07,
+        "remainder_divided_by_tau_cubed": -5.218636931104568e-07,
+        "resolvent_error": 0.02259399192566297,
+        "resolvent_error_bound": 0.033477022952008315,
+        "semigroup_error": 0.018401130749369096,
+        "semigroup_error_bound": 0.02770924126750154,
+        "max_eigenvalue_shift": 0.023032419897007526,
+        "split_schur_error": 1.8827425212825583e-15
+      },
+      {
+        "tau": 0.25,
+        "eta": 0.01731827579218846,
+        "lambda1": 0.011518748687211556,
+        "first_order_a": 0.011521271066148985,
+        "quadratic_correction_magnitude": 2.5142505822569783e-06,
+        "first_order_error": 2.5223789374296396e-06,
+        "first_order_error_bound": 6.658391849687387e-06,
+        "relative_form_defect": 0.01168969286001914,
+        "form_ground_error_bound": 0.00024110791170188693,
+        "second_order_remainder": -8.128355172661336e-09,
+        "second_order_remainder_bound": 8.928100364989267e-08,
+        "remainder_divided_by_tau_cubed": -5.202147310503255e-07,
+        "resolvent_error": 0.011427511240027263,
+        "resolvent_error_bound": 0.017023458837110417,
+        "semigroup_error": 0.00924452319278746,
+        "semigroup_error_bound": 0.01385462063375077,
+        "max_eigenvalue_shift": 0.01151874868721178,
+        "split_schur_error": 1.904082845835377e-15
+      },
+      {
+        "tau": 0.125,
+        "eta": 0.00865913789609423,
+        "lambda1": 0.005760005955987351,
+        "first_order_a": 0.005760635533074493,
+        "quadratic_correction_magnitude": 6.285626455642446e-07,
+        "first_order_error": 6.295770871413489e-07,
+        "first_order_error_bound": 1.6533625100331945e-06,
+        "relative_form_defect": 0.00584484643000957,
+        "form_ground_error_bound": 6.000692535878331e-05,
+        "second_order_remainder": -1.0144415771043489e-09,
+        "second_order_remainder_bound": 1.1084798523820722e-08,
+        "remainder_divided_by_tau_cubed": -5.193940874774266e-07,
+        "resolvent_error": 0.005746953238579278,
+        "resolvent_error_bound": 0.008584800921107841,
+        "semigroup_error": 0.004633304205655166,
+        "semigroup_error_bound": 0.006927310316875385,
+        "max_eigenvalue_shift": 0.005760005955987574,
+        "split_schur_error": 8.881784197001252e-16
+      },
+      {
+        "tau": 0.0625,
+        "eta": 0.004329568948047115,
+        "lambda1": 0.0028801604991693726,
+        "first_order_a": 0.0028803177665372463,
+        "quadratic_correction_magnitude": 1.5714066139106114e-07,
+        "first_order_error": 1.572673678736959e-07,
+        "first_order_error_bound": 4.1195036726457136e-07,
+        "relative_form_defect": 0.002922423215004785,
+        "form_ground_error_bound": 1.496820111580976e-05,
+        "second_order_remainder": -1.2670648263477157e-10,
+        "second_order_remainder_bound": 1.3809393872279244e-09,
+        "remainder_divided_by_tau_cubed": -5.189897528720244e-07,
+        "resolvent_error": 0.002881848574086892,
+        "resolvent_error_bound": 0.00431090458939886,
+        "semigroup_error": 0.0023194194277694263,
+        "semigroup_error_bound": 0.0034636551584376926,
+        "max_eigenvalue_shift": 0.0028801604991695955,
+        "split_schur_error": 1.7782237558011924e-15
+      },
+      {
+        "tau": 0.03125,
+        "eta": 0.0021647844740235577,
+        "lambda1": 0.0014401195822725983,
+        "first_order_a": 0.0014401588832686231,
+        "quadratic_correction_magnitude": 3.9285165347765285e-08,
+        "first_order_error": 3.9300996024834584e-08,
+        "first_order_error_bound": 1.0281468458305901e-07,
+        "relative_form_defect": 0.0014612116075023926,
+        "form_ground_error_bound": 3.7378730371076847e-06,
+        "second_order_remainder": -1.583067706929833e-11,
+        "second_order_remainder_bound": 1.7232761372315508e-10,
+        "remainder_divided_by_tau_cubed": -5.187396262067677e-07,
+        "resolvent_error": 0.0014430264371367838,
+        "resolvent_error_bound": 0.0021601083051024624,
+        "semigroup_error": 0.0011604023809749868,
+        "semigroup_error_bound": 0.0017318275792188463,
+        "max_eigenvalue_shift": 0.0014401195822728214,
+        "split_schur_error": 4.888971604726177e-16
+      }
+    ]
+  },
+  "tangential_normalization": [
+    {
+      "s": 0.2,
+      "kappa_n1": 1.0,
+      "kappa_n3": 4.487989505128277,
+      "direct_radial_n3": 4.487989505128276,
+      "n3_error": 8.881784197001252e-16
+    },
+    {
+      "s": 0.5,
+      "kappa_n1": 1.0,
+      "kappa_n3": 3.141592653589793,
+      "direct_radial_n3": 3.141592653589793,
+      "n3_error": 0.0
+    },
+    {
+      "s": 0.85,
+      "kappa_n1": 1.0,
+      "kappa_n3": 2.3271056693257726,
+      "direct_radial_n3": 2.3271056693257726,
+      "n3_error": 0.0
+    }
+  ],
+  "collar": {
+    "normalization": "c=1; \u03a9=(0,1); both exterior collars; u=x(1-x) for weighted energy",
+    "subcritical_mass": [
+      {
+        "s": 0.2,
+        "epsilon": 0.1,
+        "mass": 1.602798251909778,
+        "independent_quadrature": 1.602798251909783,
+        "quadrature_error": 4.884981308350689e-15,
+        "leading_asymptotic": 2.09323869292465,
+        "ratio": 0.7657025724430719
+      },
+      {
+        "s": 0.2,
+        "epsilon": 0.01,
+        "mass": 0.47589732318125966,
+        "independent_quadrature": 0.4758973231812614,
+        "quadrature_error": 1.7208456881689926e-15,
+        "leading_asymptotic": 0.5257977870668278,
+        "ratio": 0.9050957133845338
+      },
+      {
+        "s": 0.2,
+        "epsilon": 0.001,
+        "mass": 0.12707543223870651,
+        "independent_quadrature": 0.1270754322387065,
+        "quadrature_error": 2.7755575615628914e-17,
+        "leading_asymptotic": 0.1320744327050928,
+        "ratio": 0.9621501272880839
+      },
+      {
+        "s": 0.35,
+        "epsilon": 0.1,
+        "mass": 4.49696642101121,
+        "independent_quadrature": 4.496966421011225,
+        "quadrature_error": 1.4210854715202004e-14,
+        "leading_asymptotic": 4.773211748831164,
+        "ratio": 0.9421259013100353
+      },
+      {
+        "s": 0.35,
+        "epsilon": 0.01,
+        "mass": 2.3638008004727045,
+        "independent_quadrature": 2.3638008004727142,
+        "quadrature_error": 9.769962616701378e-15,
+        "leading_asymptotic": 2.392272791913885,
+        "ratio": 0.9880983508496947
+      },
+      {
+        "s": 0.35,
+        "epsilon": 0.001,
+        "mass": 1.1961204392376836,
+        "independent_quadrature": 1.196120439237689,
+        "quadrature_error": 5.329070518200751e-15,
+        "leading_asymptotic": 1.198976582661111,
+        "ratio": 0.9976178488681671
+      },
+      {
+        "s": 0.45,
+        "epsilon": 0.1,
+        "mass": 17.438925598830995,
+        "independent_quadrature": 17.438925598831048,
+        "quadrature_error": 5.3290705182007514e-14,
+        "leading_asymptotic": 17.651738549428483,
+        "ratio": 0.9879437965840266
+      },
+      {
+        "s": 0.45,
+        "epsilon": 0.01,
+        "mass": 13.999151470782664,
+        "independent_quadrature": 13.999151470782724,
+        "quadrature_error": 6.039613253960852e-14,
+        "leading_asymptotic": 14.021274321782077,
+        "ratio": 0.998422193982394
+      },
+      {
+        "s": 0.45,
+        "epsilon": 0.001,
+        "mass": 11.13527285775096,
+        "independent_quadrature": 11.135272857751007,
+        "quadrature_error": 4.618527782440651e-14,
+        "leading_asymptotic": 11.137494080606054,
+        "ratio": 0.9998005634984838
+      }
+    ],
+    "truncated_divergence": [
+      {
+        "s": 0.5,
+        "epsilon": 0.1,
+        "cutoff": 0.01,
+        "truncated_mass": 4.434450488085778
+      },
+      {
+        "s": 0.5,
+        "epsilon": 0.1,
+        "cutoff": 0.0001,
+        "truncated_mass": 13.62509018835629
+      },
+      {
+        "s": 0.5,
+        "epsilon": 0.1,
+        "cutoff": 1e-06,
+        "truncated_mass": 22.835232570330806
+      },
+      {
+        "s": 0.5,
+        "epsilon": 0.1,
+        "cutoff": 1e-08,
+        "truncated_mass": 32.04557096230799
+      },
+      {
+        "s": 0.65,
+        "epsilon": 0.1,
+        "cutoff": 0.01,
+        "truncated_mass": 10.054368706964514
+      },
+      {
+        "s": 0.65,
+        "epsilon": 0.1,
+        "cutoff": 0.0001,
+        "truncated_mass": 70.90005880362695
+      },
+      {
+        "s": 0.65,
+        "epsilon": 0.1,
+        "cutoff": 1e-06,
+        "truncated_mass": 313.1912014977699
+      },
+      {
+        "s": 0.65,
+        "epsilon": 0.1,
+        "cutoff": 1e-08,
+        "truncated_mass": 1277.7702189641238
+      },
+      {
+        "s": 0.85,
+        "epsilon": 0.1,
+        "cutoff": 0.01,
+        "truncated_mass": 33.696458471777696
+      },
+      {
+        "s": 0.85,
+        "epsilon": 0.1,
+        "cutoff": 0.0001,
+        "truncated_mass": 1051.9008435617861
+      },
+      {
+        "s": 0.85,
+        "epsilon": 0.1,
+        "cutoff": 1e-06,
+        "truncated_mass": 26628.328592867474
+      },
+      {
+        "s": 0.85,
+        "epsilon": 0.1,
+        "cutoff": 1e-08,
+        "truncated_mass": 669079.1498167209
+      }
+    ],
+    "boundary_zero_profile": [
+      {
+        "s": 0.25,
+        "epsilon": 0.1,
+        "energy_exact_elementary": 0.023123987929091427,
+        "quadrature_160": 0.02312398792909149,
+        "quadrature_320": 0.02312398792909069,
+        "absolute_check_error": 7.389922007661198e-16,
+        "finite_beta_upper_bound": 0.20317460317460317
+      },
+      {
+        "s": 0.25,
+        "epsilon": 0.01,
+        "energy_exact_elementary": 0.0029242952887879037,
+        "quadrature_160": 0.0029242952887878603,
+        "quadrature_320": 0.0029242952887877567,
+        "absolute_check_error": 1.470178145890344e-16,
+        "finite_beta_upper_bound": 0.20317460317460317
+      },
+      {
+        "s": 0.5,
+        "epsilon": 0.1,
+        "energy_exact_elementary": 0.040637601064946294,
+        "quadrature_160": 0.04063760106494592,
+        "quadrature_320": 0.04063760106494449,
+        "absolute_check_error": 1.8041124150158794e-15,
+        "finite_beta_upper_bound": 0.16666666666666666
+      },
+      {
+        "s": 0.5,
+        "epsilon": 0.01,
+        "energy_exact_elementary": 0.006027089778821049,
+        "quadrature_160": 0.006027089778820689,
+        "quadrature_320": 0.006027089778820474,
+        "absolute_check_error": 5.750608322863116e-16,
+        "finite_beta_upper_bound": 0.16666666666666666
+      },
+      {
+        "s": 0.75,
+        "epsilon": 0.1,
+        "energy_exact_elementary": 0.08064032124939928,
+        "quadrature_160": 0.08064032124939924,
+        "quadrature_320": 0.08064032124939634,
+        "absolute_check_error": 2.942091015256665e-15,
+        "finite_beta_upper_bound": 0.2031746031746031
+      },
+      {
+        "s": 0.75,
+        "epsilon": 0.01,
+        "energy_exact_elementary": 0.015399504151546747,
+        "quadrature_160": 0.015399504151546797,
+        "quadrature_320": 0.015399504151546239,
+        "absolute_check_error": 5.082739784612045e-16,
+        "finite_beta_upper_bound": 0.2031746031746031
+      },
+      {
+        "s": 0.9,
+        "epsilon": 0.1,
+        "energy_exact_elementary": 0.13218982046021657,
+        "quadrature_160": 0.1321898204602161,
+        "quadrature_320": 0.13218982046021133,
+        "absolute_check_error": 5.245803791353865e-15,
+        "finite_beta_upper_bound": 0.263047138047138
+      },
+      {
+        "s": 0.9,
+        "epsilon": 0.01,
+        "energy_exact_elementary": 0.03135716880599301,
+        "quadrature_160": 0.03135716880599279,
+        "quadrature_320": 0.03135716880599165,
+        "absolute_check_error": 1.3600232051658168e-15,
+        "finite_beta_upper_bound": 0.263047138047138
+      }
+    ]
+  },
+  "status": "all assertions passed"
+}

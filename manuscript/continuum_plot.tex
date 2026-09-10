@@ -1,0 +1,26 @@
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=3 by 1,horizontal sep=1.0cm},width=0.31\textwidth,height=4.9cm,xmode=log,xmin=1e-12,xmax=1e-1,xtick={1e-12,1e-6,1e-1},xlabel={$\varepsilon$},tick label style={font=\scriptsize},label style={font=\small},title style={font=\small},grid=major,grid style={gray!18},legend style={font=\scriptsize,draw=none},legend columns=4]
+\nextgroupplot[title={$s=0.15$},ymin=0,legend to name=scaleslegend]
+\addplot[blue!75!black,thick,no marks] table[x=epsilon,y=combined] {figures/scales_0_15.dat};
+\addplot[green!40!black,thick,dashed,no marks] table[x=epsilon,y=geometric] {figures/scales_0_15.dat};
+\addplot[orange!90!black,thick,dotted,no marks] table[x=epsilon,y=spectral] {figures/scales_0_15.dat};
+\addplot[gray,thin,dashdotted,no marks] table[x=epsilon,y=limit] {figures/scales_0_15.dat};
+\legend{Combined,Geometric,Spectral,Predicted limit}
+\nextgroupplot[title={$s=0.25$},ymin=0]
+\addplot[blue!75!black,thick,no marks] table[x=epsilon,y=combined] {figures/scales_0_25.dat};
+\addplot[green!40!black,thick,dashed,no marks] table[x=epsilon,y=geometric] {figures/scales_0_25.dat};
+\addplot[orange!90!black,thick,dotted,no marks] table[x=epsilon,y=spectral] {figures/scales_0_25.dat};
+\addplot[gray,thin,dashdotted,no marks] table[x=epsilon,y=limit] {figures/scales_0_25.dat};
+\nextgroupplot[title={$s=0.35$},ymin=0]
+\addplot[blue!75!black,thick,no marks] table[x=epsilon,y=combined] {figures/scales_0_35.dat};
+\addplot[green!40!black,thick,dashed,no marks] table[x=epsilon,y=geometric] {figures/scales_0_35.dat};
+\addplot[orange!90!black,thick,dotted,no marks] table[x=epsilon,y=spectral] {figures/scales_0_35.dat};
+\addplot[gray,thin,dashdotted,no marks] table[x=epsilon,y=limit] {figures/scales_0_35.dat};
+\end{groupplot}
+\end{tikzpicture}
+\par\smallskip\ref{scaleslegend}
+\caption{The Galerkin correction $L_s\rho_\varepsilon-\widehat\lambda_\varepsilon$ and its geometric and spectral components, divided by $\varepsilon$ when $s\leq1/4$ and by $\rho_\varepsilon^2$ when $s>1/4$. The dashed--dotted limits use $G_s=1/s$ and, where it enters, the computed $\widehat S_{24,256}$. All curves come from the same finite Galerkin approximation. OpenAI Codex assisted in preparing the PGFPlots source; the curves are generated from the supplied numerical data.}
+\label{fig:scales}
+\end{figure}
